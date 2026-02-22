@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FeedbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,12 @@ Route::get('/about', function () {
     return view('about');
 });
 
+route::get('/feedback', function () {
+    return view('feedback');
+});
+
+route ::post('/feedback/send', function () {
+    return view('feedback-send');  
+
+});
 // Create additional Routes below
